@@ -16,6 +16,9 @@ int main(void)
 
   // Create a GLFW window containing a OpenGL context
   window = glfwCreateWindow(500, 500, "Hello OpenGL", NULL, NULL);
+	// TODO 1 : Change Window size to 800x800
+	// TODO 2 : Write my English name in window title bar
+  window = glfwCreateWindow(500, 500, "Hello OpenGL", NULL, NULL);
   if (!window)
   {
     glfwTerminate();
@@ -35,6 +38,7 @@ int main(void)
   // Init OpenGL
   glEnable(GL_DEPTH_TEST);
   glEnable(GL_CULL_FACE);
+	// TODO 3 : Change internal color of Window from white to gray
   glClearColor(0.5, 0.5, 0.5, 1.0);
 
 
